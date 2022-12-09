@@ -8,6 +8,10 @@ authors = ["Jonas Groenbek <jonasgroenbek@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rocket = "0.5.0-rc.2"
-futures = "0.3"
+rocket = "0.5.0-rc.2" # HTTP framework
+futures = "0.3" # Used for asynchronous programming - used with rocket
 tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] } # Used to serialize and deserialize general data
+mongodb = "2.3.1" # Used to set up connection
+bson = { version = "2", features = ["chrono-0_4"] } # Used format to serialize and deserialize mongodb data (used with serde)
+chrono = "0.4" # Used for setting DateTimes

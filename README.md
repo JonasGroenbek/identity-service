@@ -33,8 +33,7 @@ identity_pool {
 
 Milestones: 
 - [x] HTTP connection
-- [ ] Connect to Mongo database with identity collection
-Standard Endpoints
+- [ ] Connect to Mongo database with identity collection Standard Endpoints
 * post identity-pool
 * get /identity-pool/{pool-token}
 - [ ] Expand Endpoints implement identities
@@ -47,6 +46,8 @@ Standard Endpoints
 * put identity-pool/roles
 * get identity-pool/roles
 - [ ] Implement JWT authentication
-- [ ] Docker + docker-compose
+- [ ] Docker webserver
+- [ ] Docker MongoDB (strategy for testing too)
+- [ ] docker-compose
 - [ ] Integration tests
 - [ ] CircleCI pipeline that runs tests
